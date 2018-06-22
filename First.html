@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
 
 <html lang="zh-tw" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title>Test</title>
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: Arial;
@@ -12,72 +13,32 @@
         }
 
         #warpper {
-            width: auto;
+            width: 100%;
             background-color: #fff;
-            margin: 10px auto;
-            border: 1px solid #000;
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px;
+            margin: 0px auto;
+            padding: 0px;
+            /*border: 1px solid #000;*/
+            /*border-top-left-radius: 3px;
+            border-top-right-radius: 3px;*/
             overflow: hidden;
+            float: left;
         }
+
         /* top */
+
         #top {
             height: 80px;
+            background-color: #fff;
+            margin: 0px auto;
         }
 
         .left {
             float: left;
         }
 
-        #top_Menu {
-            float: right;
-            margin-top: 1%;
-            margin-right: 1%;
-        }
-
-            #top_Menu ul {
-                text-decoration: none;
-            }
-
-                #top_Menu ul li {
-                    display: inline;
-                }
-
-                    #top_Menu ul li a:link {
-                        font-size: 12px;
-                        color: #aaa;
-                        text-decoration: none;
-                    }
-
-                    #top_Menu ul li a:hover {
-                        font-size: 12px;
-                        color: #000;
-                        text-decoration: none;
-                    }
-
-                    #top_Menu ul li a:visited {
-                        font-size: 12px;
-                        color: #aaa;
-                        text-decoration: none;
-                    }
-
-        .google_Icon {
-            /*background: url(small-logo.png) no-repeat left;*/
-        }
-
-        .lhuLogo {
-            position: center;
-            display: block;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        #top_Menu img {
-            position: relative;
-            top: 5px;
-        }
-
-        div, ul, h2 {
+        div,
+        ul,
+        h2 {
             /*border:1px solid #0f0;*/
             padding: 0px;
             margin: 0px;
@@ -89,11 +50,12 @@
 
             #main_Menu ul {
                 list-style: none;
+                text-align: center;
             }
 
                 #main_Menu ul li {
                     display: inline-block;
-                    border-right: 1px solid #fff;
+                    /*border-right: 1px solid #fff;*/
                     padding-top: 5px;
                     padding-bottom: 5px;
                     padding-right: 10px;
@@ -105,9 +67,10 @@
                         color: #fff;
                     }
 
-                    #main_Menu ul li a:hover {
-                        color: #ff6a00;
-                    }
+                    /*#main_Menu ul li a:hover {
+            color: #ff6a00;
+
+        }*/
 
                     #main_Menu ul li a:active {
                         color: #0f0;
@@ -121,8 +84,6 @@
             float: left;
             width: 150px;
             text-align: center;
-            /*overflow: hidden;*/
-            background-color: transparent;
         }
 
             #sub_Menu1 src {
@@ -172,37 +133,62 @@
             height: 600px;
             margin-left: 150px;
             margin-right: 150px;
-            background-color: #aaa;
+            background-color: #eee;
             padding: 0px 10px;
+            position: relative;
             font-size: 12px;
             overflow: auto;
-            z-index: 3;
+            border-left: 2px groove hsl(205, 100%, 50%);
+            border-right: 2px groove hsl(205, 100%, 50%);
         }
 
             #content h2 {
                 height: 40px;
                 padding-top: 10px;
-                font-size: 24px;
+                font-size: 30px;
                 text-align: center;
                 vertical-align: middle;
-                background-color: #666;
-                color: #FFF;
-                letter-spacing: 10px;
+                background-color: #e5e5e5;
+                font-family: 微軟正黑體,'新細明體';
+                color: hsl(205, 100%, 50%);
+                text-shadow: -2px 1px 0px 0px #f59c20;
+                letter-spacing: 5px;
                 border-top: 2px #fff solid;
+                overflow: hidden;
             }
 
-            #content h2, h4, p {
+            #content h2,
+            h4,
+            p {
                 padding: 6px 20px 6px 20px;
+                overflow: hidden;
             }
 
             #content h4 {
                 font-size: 16px;
+                margin: 0px auto;
+                /*border: 1px solid navy;*/
+                float: left;
+                clear: left;
             }
 
             #content p {
-                line-height: 18px;
+                line-height: 16px;
+                /*float: left;*/
+                clear: both;
+                position: relative;
             }
 
+            #content ul {
+                margin: 0px auto;
+                display: inline-block;
+                margin-left: 40px;
+                /*border:1px solid red;*/
+            }
+
+                #content ul li {
+                    list-style-type: lower-roman;
+                }
         #fotter {
             clear: both;
             background-color: #000;
@@ -212,18 +198,35 @@
             padding: 10px;
         }
 
-            #fotter p, h2 {
+            #fotter p,
+            h2 {
                 margin: 0px;
             }
+        @keyframes mymove {
+            from {left: -80%;}
+            to {left: 100%;}
+        }
+        #funnyTitile {
+            font-size: 24pt;
+            font-weight: 600;
+        }
     </style>
+    <script>
+    </script>
+    <noscript>        
+        alert("沒有JavaScript????");
+    </noscript>
 </head>
+
 <body>
 
     <div id="warpper">
         <div id="top">
-            <img src="tHis is LoGo.png" style="margin-top:20px;"/>
+            <div id="funnyTitile" style="margin-top:0px; position: relative;animation: mymove 0.5s;animation-direction:alternate;animation-iteration-count:5;">
+                <img src="tHis is LoGo.png" style="margin-top:20px; " />
+            </div>
             <!--<img src="IndexLogo2.jpg" />-->
-            <div id="top_Menu">
+            <!--<div id="top_Menu">
                 <ul>
                     <li>
                         <a href="#"> 首頁 </a>
@@ -245,9 +248,9 @@
                         <a href="#Footer">chinese Site</a>
                     </li>
                 </ul>
-                <form name="searchForm" action="WebForm1.aspx"
-                      onsubmit="return validateForm()" method="delete">
-                    <input type="search" id="search" title="Search" onfocus="TextFieldOn()" onblur="TextFieldOut()" maxlength="1" placeholder="Search...." /><!--onfocus="TextFieldOn()" onfocusout="TextFieldOut()"-->
+                <form name="searchForm" action="WebForm1.aspx" onsubmit="return validateForm()" method="delete">
+                    <input type="search" id="search" title="Search" onfocus="TextFieldOn()" onblur="TextFieldOut()" maxlength="5" placeholder="Search...." />
+                    onfocus="TextFieldOn()" onfocusout="TextFieldOut()"
                     <input type="submit" id="btSearch" value="搜尋" />
                 </form>
                 <script>
@@ -256,8 +259,7 @@
                         if (x == "") {
                             alert("不要輸入空字串!");
                             return false;
-                        }
-                        else if (x != "") {
+                        } else if (x != "") {
                             var Y = confirm("確定要搜尋?");
                             if (Y) {
                                 alert("報歉!該功能尚未啟用 :)")
@@ -279,24 +281,26 @@
                         document.getElementById("search").style.backgroundColor = "#eee";
                         console.log();
                     }
+
                     function TextFieldOut() {
                         document.getElementById("search").style.backgroundColor = "#fff";
                     }
 
                 </script>
 
-            </div>
+            </div>-->
         </div>
-
         <div id="main_Menu">
             <div id="lhuLogo">
             </div>
             <ul>
-                <li>
-                    <a href="#">HTML</a>
+                <!--JS 來源-->>
+                <!--https://www.w3schools.com/jsref/event_onmouseover.asp-->
+                <li id="PW" onmouseover="document.getElementById('PW2').style.color = '#000'; document.getElementById('PW').style.backgroundColor = '#fff'; " onmouseout="document.getElementById('PW').style.backgroundColor = '#000';document.getElementById('PW2').style.color = '#fff';">
+                    <a href="#" id="PW2">Popup Window</a>
                 </li>
-                <li>
-                    <a href="#">XHTML</a>
+                <li id="XHTML" onmouseover="document.getElementById('XHTML2').style.color = '#000'; document.getElementById('XHTML').style.backgroundColor = '#fff'; " onmouseout="document.getElementById('XHTML').style.backgroundColor = '#000';document.getElementById('XHTML2').style.color = '#fff';">
+                    <a id="XHTML2" href="#">XHTML</a>
                 </li>
                 <li>
                     <a href="#">CSS</a>
@@ -314,7 +318,8 @@
             <!--<img src="images (4).jpg" style="background:repeat" />-->
             <!--<img src="Chrysanthemum.jpg" style="overflow:hidden; background-position-y:top; clear:both" />-->
             <p>&nbsp;</p>
-            <h2>LHU</h2>
+            <h2 style="color:#f66; text-shadow:1px 1px 1px 1px hsl(205, 100%, 50%);">404 <br />Not <br />Found!!</h2>
+            <p>The resource requested could not be found on this server!<br />在此伺服器上找不到請求的資源！</p>
             <!--<p>
                 <a href="#">lhu.edu.tw</a>
             </p>
@@ -346,92 +351,76 @@
 
         </div>
         <div id="sub_Menu2">
-            <!--<p>&nbsp;</p>
-            <h2>LHU</h2>
-            <p>
-                <a href="#">lhu.edu.tw</a>
-            </p>
-            <p>
-                <a href="#">lhu.edu.tw</a>
-            </p>
-            <p>
-                <a href="#">lhu.edu.tw</a>
-            </p>
-            <p>
-                <a href="#">lhu.edu.tw</a>
-            </p>
-            <p>
-                <a href="#">lhu.edu.tw</a>
-            </p>
-            <p>
-                <a href="#">lhu.edu.tw</a>
-            </p>
-            <p>
-                <a href="#">lhu.edu.tw</a>
-            </p>
-            <p>
-                <a href="#">lhu.edu.tw</a>
-            </p>
-            <p>
-                <a href="#">lhu.edu.tw</a>
-            </p>
-            <p>&nbsp;</p>-->
+            <p>&nbsp;</p>
+            <h2 style="color:#f66; text-shadow:1px 1px 1px 1px hsl(205, 100%, 50%);">404 <br />Not <br />Found!!</h2>
+            <p>The resource requested could not be found on this server!<br />在此伺服器上找不到請求的資源！</p>
+
+            <!--<p>
+        <a href="#">lhu.edu.tw</a>
+    </p>
+    <p>
+        <a href="#">lhu.edu.tw</a>
+    </p>
+    <p>
+        <a href="#">lhu.edu.tw</a>
+    </p>
+    <p>
+        <a href="#">lhu.edu.tw</a>
+    </p>
+    <p>
+        <a href="#">lhu.edu.tw</a>
+    </p>
+    <p>
+        <a href="#">lhu.edu.tw</a>
+    </p>
+    <p>
+        <a href="#">lhu.edu.tw</a>
+    </p>
+    <p>
+        <a href="#">lhu.edu.tw</a>
+    </p>
+    <p>
+        <a href="#">lhu.edu.tw</a>
+    </p>-->
+            <p>&nbsp;</p>
 
         </div>
         <div id="content">
-            <h2>Introduction</h2>
-            <h4>Css Design</h4>
+            <h2>JavaScript教學</h2>
+
+            <h4>JavaScript是什麼?</h4>
             <p>
-                Cascading Style Sheets (CSS) is a style sheet language used for describing the look and
-
-                formatting of a document written in a markup language. While most often used to change the style
-
-                of web pages and user interfaces written in HTML and XHTML, the language can be applied to any
-
-                kind of XML document, including plain XML, SVG and XUL. Along with HTML and JavaScript, CSS is a
-
-                cornerstone technology used by most websites to create visually engaging webpages, user
-
-                interfaces for web applications, and user interfaces for many mobile applications.....
-                <a href="http://www.lhu.edu.tw/course/course_css.php">more</a>
+                <ul>
+                    <li> JavaSciprt是一種物件導向、弱型別的腳本語言</li>
+                    <li> JavaSciprt是一種物件導向、弱型別的腳本語言</li>
+                    <li> JavaSciprt是一種物件導向、弱型別的腳本語言</li>
+                </ul>
             </p>
+
             <h4>Photoshop Camera Raw</h4>
             <p>
-                Photoshop was created in 1988 by Thomas and John Knoll. Since then, it has become the de
-
-                facto industry standard in raster graphics editing, such that the terms "photoshopping" and
-
-                "photoshop contest" were born. It can edit and compose raster images in multiple layers and
-
-                supports masks, alpha compositing and several color models including RGB, CMYK, Lab color space
-
-                (with capital L), spot color and duotone. .....
+                Photoshop was created in 1988 by Thomas and John Knoll. Since then, it has become the de facto industry standard in raster graphics editing, such that the terms "photoshopping" and "photoshop contest" were born. It can edit and compose raster images in multiple layers and supports masks, alpha compositing and several color models including RGB, CMYK, Lab color space (with capital L), spot color and duotone. .....
                 <a href="#">more</a>
             </p>
             <h4>Flash Animation</h4>
             <p>
-                Adobe Flash (formerly called Macromedia Flash and Shockwave Flash) is a multimedia and
-
-                software platform used for creating vector graphics, animation, games and rich Internet
-
-                applications (RIAs) that can be viewed, played and executed in Adobe Flash Player. Flash is
-
-
-                content to web pages, although usage of Flash on websites is declining.....
+                Adobe Flash (formerly called Macromedia Flash and Shockwave Flash) is a multimedia and software platform used for creating vector graphics, animation, games and rich Internet applications (RIAs) that can be viewed, played and executed in Adobe Flash Player. Flash is content to web pages, although usage of Flash on websites is declining.....
                 <a href="#">more</a>
             </p>
 
-            <h4 id="ActionScript XML">ActionScript &amp; XML  </h4>
+            <h4 id="ActionScript XML">ActionScript &amp; XML </h4>
             <p>
-                ActionScript is an object-oriented programming language originally developed by
-
-                Macromedia Inc. (now owned by Adobe Systems). It is a dialect of ECMAScript (meaning it is a
-
-                superset of the syntax and semantics of the language more widely known as JavaScript), and is
-
-                used primarily for the development of websites and software targeting the Adobe Flash Player
-
-                platform.....
+                ActionScript is an object-oriented programming language originally developed by Macromedia Inc. (now owned by Adobe Systems). It is a dialect of ECMAScript (meaning it is a superset of the syntax and semantics of the language more widely known as JavaScript), and is used primarily for the development of websites and software targeting the Adobe Flash Player platform.....
+                <a href="#">more </a>
+            </p>
+            <h4 id="ActionScript XML">ActionScript &amp; XML </h4>
+            <p>
+                ActionScript is an object-oriented programming language originally developed by Macromedia Inc. (now owned by Adobe Systems). It is a dialect of ECMAScript (meaning it is a superset of the syntax and semantics of the language more widely known as JavaScript), and is used primarily for the development of websites and software targeting the Adobe Flash Player platform.....
+                <a href="#">more </a>
+            </p>
+            <h4 id="ActionScript XML">ActionScript &amp; XML </h4>
+            <p>
+                ActionScript is an object-oriented programming language originally developed by Macromedia Inc. (now owned by Adobe Systems). It is a dialect of ECMAScript (meaning it is a superset of the syntax and semantics of the language more widely known as JavaScript), and is used primarily for the development of websites and software targeting the Adobe Flash Player platform.....
                 <a href="#">more </a>
             </p>
 
@@ -442,10 +431,11 @@
 
             <h2>
                 Power by
-                <a href="http://www.lhu.edu.tw/">lhu.com</a> LHU Web Designer
+                <a href="#">J.T Zheng</a> LHU Web Designer
             </h2>
             <p>&copy;Copyright notice and status information</p>
         </div>
     </div>
 </body>
+
 </html>
