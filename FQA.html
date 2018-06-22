@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<!--[if it IE 9]-->
+<!--<script src="  hhttp://html5shiv.googlecode.com/svn/trunk/html5.js">
+    →
+</script>-->
+<!--[end if]-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="3;url=http://localhost:50397/Folder1/First.html" />
+
+    <title>FQA</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            color: #000;
+        }
+
+        #goBack {
+            color: #000;
+        }
+
+            #goBack a:link {
+                text-decoration: none;
+                color: #000;
+            }
+
+            #goBack a:active {
+                color: #ff006e;
+            }
+
+            #goBack a:hover {
+                color: #0094ff;
+            }
+
+            #goBack a:visited {
+                color: hsla(249, 85%, 54%,0.4);
+            }
+            .errMes{
+                text-align:center;
+            }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center">FQA</h2>
+    <div id="goBack">
+        <p>
+            <script>
+                function onF() {
+                    document.getElementById("goBack").style.color = rgb(255, 0, 0);
+                }
+            </script>
+            <div name="errorMessage" class="errMes"><h4>很抱歉該頁面尚未啟用<br>頁面將在3秒後,重新導向回首頁.</h4><br /></div>
+            
+            <!--很抱歉! 該頁面尚未啟用,請
+            <a href="First.html" onfocus="onF">點擊</a> 回首頁.-->
+        </p>
+        <input type="search" name="username" autofocus placeholder="Search...." />
+    </div>
+    <!--<script>
+        document.location.href = "First.html";
+    </script>-->
+</body>
+</html>
