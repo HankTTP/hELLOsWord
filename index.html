@@ -455,23 +455,83 @@
                 還再使用Flash? ,放棄他吧!他的安全性及性能是無法比擬優秀的HTML5呢.尤其是安行性再近年狀況百出,以至於遭到停用的下場.欲知詳情可自行在網路搜尋相關的新聞啦.
             </p>
 
-            <h4 id="ActionScript XML">ActionScript &amp; XML </h4>
+                       <h4 id="alertHello">使用JavaScript來點HelloWorld!吧</h4>
             <p>
-                ActionScript is an object-oriented programming language originally developed by Macromedia Inc. (now owned by Adobe Systems). It is a dialect of ECMAScript (meaning it is a superset of the syntax and semantics of the language more widely known as JavaScript), and is used primarily for the development of websites and software targeting the Adobe Flash Player platform.....
-                <a href="#">more </a>
-            </p>
-            <h4 id="ActionScript XML">ActionScript &amp; XML </h4>
-            <p>
-                ActionScript is an object-oriented programming language originally developed by Macromedia Inc. (now owned by Adobe Systems). It is a dialect of ECMAScript (meaning it is a superset of the syntax and semantics of the language more widely known as JavaScript), and is used primarily for the development of websites and software targeting the Adobe Flash Player platform.....
-                <a href="#">more </a>
-            </p>
-            <h4 id="ActionScript XML">ActionScript &amp; XML </h4>
-            <p>
-                ActionScript is an object-oriented programming language originally developed by Macromedia Inc. (now owned by Adobe Systems). It is a dialect of ECMAScript (meaning it is a superset of the syntax and semantics of the language more widely known as JavaScript), and is used primarily for the development of websites and software targeting the Adobe Flash Player platform.....
-                <a href="#">more </a>
-            </p>
+                只要將下面的程式插入html中就能執行了!
+                <br />
+                <div id="JScode_Hello" title=" 這是alert視窗">
 
-            <p>&nbsp;</p>
+                    <span style="border:2px dashed hsl(205, 100%, 50%); float:left; margin-left:20px; margin-bottom:20px; padding:15px; ">
+                        &lt;script&gt;<br />
+                        alert("HelloWorld!"); <br />
+                        &lt;script/&gt;
+                    </span>
+
+                </div>
+                <div id="JScode_Hello2" title="這是confirm視窗">
+
+                    <span style="border:2px dashed  hsl(256, 50%, 50%); float:left; margin-left:20px; margin-bottom:20px; padding:15px;">
+                        &lt;script&gt;<br />
+                        confirm("HelloWorld!"); <br />
+                        &lt;script/&gt;
+                    </span>
+
+                </div>
+                <div id="JScode_Hello2" title="這是confirm視窗+alert視窗">
+
+                    <span style="border:2px dashed  hsl(0, 500%, 50%); float:left; margin-left:20px; margin-bottom:20px; padding:15px;">
+                        &lt;script&gt;<br />
+                        confirm("HelloWorld!"); <br />
+                        alert("HelloWorld!"); <br />
+                        &lt;script/&gt;
+                    </span>
+                </div>
+            </p>
+            <h4>使用JavaScript產生表單(form)</h4>
+            <p>
+                只要將下面的程式插入html中就能執行了!
+                <div id="JScode_Form" title="這是form">
+
+                    <span style="border:2px dashed  hsl(0, 500%, 50%); float:left; margin-left:20px; margin-bottom:20px; padding:15px;">
+                        &lt;form&gt;<br />
+                        &lt;fieldset&gt;<br />
+                        &lt;legend&gt;
+                        Login
+                        &lt;/legend&gt;<br /><br />
+                        &lt;div style="margin-bottom: 8px "&gt;<br />
+                        &lt;label for="Access"&gt;User Address : &lt;/label&gt;<br />
+                        &lt;input type="text" name="Access" id="Access" /&gt;<br />
+                        &lt;/div&gt;<br /><br />
+                        &lt;div style="margin-top: 15px"&gt;<br />
+                        &lt;label for="password">P a s s w o r d &nbsp: &lt;/label><br />
+                        &lt;input type="password" name="password" id="password" /&gt;<br />
+                        &lt;/div&gt;<br /><br />
+                        &lt;/fieldset&gt;<br />
+                        &lt;/form&gt;
+                    </span>
+                </div>
+            </p>
+            <div style="margin-top:-20px;">
+                上面那個表單長這樣
+                <div id="form" style="width:200px;">
+                    <form>
+                        <fieldset style=" border: 2px solid #0094ff;">
+                            <legend> Login </legend>
+                            <div style="margin-bottom: 15px ">
+                                <label for="email">User Address : </label>
+                                <input type="text" name="Access" id="Access" placeholder="這是text" maxlength="1" />
+                            </div>
+                            <div style="margin-bottom: 15px">
+                                <label for="password">P a s s w o r d  : </label>
+                                <input type="password" name="password" id="password" placeholder="這是password" maxlength="1" />
+                            </div>
+                            <div>
+                                <input type="button" value="這不會觸發事件得按鈕" onclick="alert('都說沒有了!,還按????')" />
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </div>
         <div id="fotter">
             <a name="#footer">This is Footer.</a>
